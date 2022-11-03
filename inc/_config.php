@@ -11,7 +11,7 @@ date_default_timezone_set('America/Sao_Paulo');
  **************************************/
 $page_title = '';                           // Título dinâmico da página:
 $page_content = '';                         // Conteúdo dinâmico da página:
-$site_name = 'PHP.inc.DB';                  // Nome do site:
+$site_name = 'Mundo verde.';                  // Nome do site:
 $site_slogan = 'Só um site dinâmico...';    // Slogan do site:
 $tag_title = $site_name;                    // Formato da tag <title>:
 $site_year = 2022;                          // Ano de lançamento do site:
@@ -31,7 +31,7 @@ if (str_contains($_SERVER['SERVER_NAME'], 'localhost')) :
     $hostname = 'localhost';    // Endereço do servidor MySQL:
     $username = 'root';         // Nome de usuário do MySQL: 
     $password = '';             // Senha do usuário do MySQL:
-    $database = 'phpincdb';     // Nome do bando de dados:
+    $database = 'Mundoverde';     // Nome do bando de dados:
 
 // Se não estamos no XAMMP, estamos no provedor de hospedagem...
 else :

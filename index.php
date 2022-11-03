@@ -59,7 +59,7 @@ endif;
 
 // Saída para o template:
 $page_content = <<<HTML
-
+ 
 <article>
     {$content}
 </article>

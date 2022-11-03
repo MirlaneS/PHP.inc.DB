@@ -1,17 +1,17 @@
 -- Apaga o banco de dados caso ele exista:
 -- Isso é útil em "tempo de desenvolvimento".
 -- Quando o aplicativo estiver pronto, isso NUNCA deve ser usado.
-DROP DATABASE IF EXISTS phpincdb;
+DROP DATABASE IF EXISTS Mundoverde;
 
 -- Recria o banco de dados:
 -- CHARACTER SET utf8 especifica que o banco de dados use a tabela UTF-8.
 -- COLLATE utf8_general_ci especifica que as buscas serão "case-insensitive".
-CREATE DATABASE phpincdb CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE Mundoverde CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 -- Seleciona banco de dados:
 -- Todas as ações seguintes se referem a este banco de dados, até que outro
 -- "USE nomedodb" seja encontrado.
-USE phpincdb;
+USE Mundoverde;
 
 -- Cria a tabela users:
 CREATE TABLE users (
@@ -66,8 +66,8 @@ INSERT INTO users (
     -- Muito cuidado com a ordem e a quantidade de dados,
     -- elas devem coincidir com os campos acima.
     '1',
-    'Joca da Silva',
-    'joca@silva.com',
+    'Beto da Silva',
+    'beto@silva.com',
 
     -- A senha será criptografada pela função SHA1 antes de ser inserida.
     SHA1('senha123'),
@@ -90,8 +90,8 @@ INSERT INTO users (
 -- da query, portanto, evite repetir este processo muitas vezes.
 (
     '2',
-    'Marineuza Siriliano',
-    'mari@neuza.com',
+    'Maria Siriliano',
+    'mari@silva.com',
     SHA1('senha123'),
     'https://randomuser.me/api/portraits/women/72.jpg',
     '2002-03-21',
@@ -99,8 +99,8 @@ INSERT INTO users (
     'author'
 ), (
     '3',
-    'Hemengarda Sirigarda',
-    'hemen@garda.com',
+    'Hondeberge Sirigarda',
+    'honde@garda.com',
     SHA1('senha123'),
     'https://randomuser.me/api/portraits/women/20.jpg',
     '2004-08-19',
@@ -108,8 +108,8 @@ INSERT INTO users (
     'author'
 ), (
     '4',
-    'Setembrino Trocatapas',
-    'set@brino.com',
+    'Sergio Trocatapas',
+    'set@gino.com',
     SHA1('senha123'),
     'https://randomuser.me/api/portraits/men/20.jpg',
     '1979-02-03',
